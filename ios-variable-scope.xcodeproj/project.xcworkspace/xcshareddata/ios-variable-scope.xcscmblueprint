@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "494EACA957E804723E7D5EDDB4CA505AC77B6CF2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A" : 0,
+    "494EACA957E804723E7D5EDDB4CA505AC77B6CF2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C85CBAC1-4216-4E5A-8282-DA1853765FE6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A" : "..",
+    "494EACA957E804723E7D5EDDB4CA505AC77B6CF2" : "ios-variable-scope-001-prework-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ios-variable-scope",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios-variable-scope.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:linocchio\/ios-variable-scope-001-prework-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "494EACA957E804723E7D5EDDB4CA505AC77B6CF2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SwiftMission\/iOSGit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A"
+    }
+  ]
+}
