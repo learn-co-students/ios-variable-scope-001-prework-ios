@@ -33,4 +33,18 @@
     return temp;
 }
 
+-(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array
+{
+    NSUInteger count = 0;
+    
+    for (NSUInteger i = 0; i < [array count]; i++) {
+        NSString *temp = [[NSString stringWithString:array[i]] uppercaseString];
+        if ([temp isEqualToString:array[i]]) {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
 @end
