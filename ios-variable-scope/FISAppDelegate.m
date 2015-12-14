@@ -25,4 +25,12 @@
  
  */
 
+- (NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array
+{
+    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:array
+                                                       copyItems: YES];
+    [temp addObject:string];
+    return temp;
+}
+
 @end
