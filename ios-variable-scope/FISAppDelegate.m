@@ -21,7 +21,9 @@
 
 - (NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array {
     
-    return nil;
+    NSMutableArray *arrayCopy = [array mutableCopy];
+    [arrayCopy addObject:string];
+    return arrayCopy;
 }
 
 - (NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array {
