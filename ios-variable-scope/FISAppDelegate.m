@@ -19,10 +19,19 @@
     return YES;
 }
 
-/*
- 
- * Write your method definitions here.
- 
- */
+- (NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array {
+    
+    return nil;
+}
+
+- (NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array {
+    
+    return 0;
+}
+
+- (void)removeAllObjectsFromArray:(NSMutableArray *)array {
+    
+    //
+}
 
 @end
