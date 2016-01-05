@@ -39,7 +39,7 @@
 
 - (void)removeAllObjectsFromArray:(NSMutableArray *)array {
     
-    //
+    [array removeAllObjects];
 }
 
 @end
