@@ -28,7 +28,13 @@
 
 - (NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array {
     
-    return 0;
+    NSUInteger count = 0;
+    NSString *string;
+    for (NSUInteger i = 0; i < [array count]; i++) {
+        string = array[i];
+        count += (string.length == [[string componentsSeparatedByCharactersInSet:[NSCharacterSet lowercaseLetterCharacterSet]] componentsJoinedByString:@""].length);
+    }
+    return count;
 }
 
 - (void)removeAllObjectsFromArray:(NSMutableArray *)array {
