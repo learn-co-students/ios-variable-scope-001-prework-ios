@@ -24,5 +24,40 @@
  * Write your method definitions here.
  
  */
+-(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array{
+    
+    NSMutableArray *arrayCopy = [[NSMutableArray alloc] initWithArray:array];
+    
+    [arrayCopy addObject:string];
+    
+    return arrayCopy;
+    
+}
+
+-(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array{
+    
+    NSUInteger uppercaseCount = 0;
+    
+    for(NSUInteger i =0; i < [array count]; i++)
+    {
+    
+        
+        BOOL isUpperCase = [[array[i] uppercaseString] isEqualToString:array[i]];
+        
+        if(isUpperCase)
+        {
+            uppercaseCount++;
+        }
+    }
+    
+    return uppercaseCount;
+}
+
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array{
+    
+    [array removeAllObjects];
+}
+
+
 
 @end
