@@ -15,14 +15,44 @@
 
 @implementation FISAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     return YES;
 }
 
-/*
- 
- * Write your method definitions here.
- 
- */
+
+-(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array
+{
+    NSMutableArray *copy = [NSMutableArray arrayWithArray: (NSMutableArray *)array];
+    
+    [copy addObject: (NSString *)string];
+    
+    return copy;
+    
+}
+
+-(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array
+{
+    NSUInteger upperCaseCount = 0;
+    
+        for (NSString *string in array)
+        {
+            NSString *upperCaseString = [string uppercaseString];
+            if ([upperCaseString isEqualToString:string])
+            {
+                upperCaseCount ++;
+            }
+        }
+    return upperCaseCount;
+}
+
+
+
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array
+{
+    
+    [array removeAllObjects];
+    
+}
 
 @end
