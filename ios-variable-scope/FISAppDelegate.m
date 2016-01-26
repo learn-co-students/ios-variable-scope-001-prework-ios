@@ -36,8 +36,17 @@
 -(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array{
 
     NSUInteger counter = 0;
+    
+    //lowerCaseSet includes all lower case letters
+    NSCharacterSet *lowerCaseSet = [NSCharacterSet lowercaseLetterCharacterSet];
+    
     for(NSUInteger i = 0; i < [array count]; i++){
-        if(array[i] == [array[i] uppercaseString]){
+        
+        //check if no elements of lowerCaseSet are inside the array[i]
+        if ([array[i] rangeOfCharacterFromSet:lowerCaseSet].location == NSNotFound){
+        
+        //this doesnt work
+        //if(array[i] == [array[i] uppercaseString]){
             
             counter += 1;
         }
