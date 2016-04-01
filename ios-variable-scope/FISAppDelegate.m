@@ -47,8 +47,11 @@
         }
     }
     return upperCaseCount;
-    
-    
+
+}
+
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array{
+    [array removeAllObjects];
 }
 
 
