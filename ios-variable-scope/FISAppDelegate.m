@@ -25,4 +25,14 @@
  
  */
 
+-(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array {
+    NSMutableArray * originalArrayCopy = [array mutableCopy];
+    
+    [originalArrayCopy addObject:string];
+    
+    return originalArrayCopy;
+
+}
+
+
 @end
