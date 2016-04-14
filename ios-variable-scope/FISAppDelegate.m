@@ -19,10 +19,26 @@
     return YES;
 }
 
-/*
- 
- * Write your method definitions here.
- 
- */
 
+-(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array{
+    NSMutableArray *array2 = [array mutableCopy];
+    [array2 addObject:string];
+    return array2;
+}
+
+-(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array{
+    
+    NSUInteger upperCaseStringCount = 0;
+    for (NSString *string in array){
+        NSString *upperCaseString = [string uppercaseString];
+        if ([string isEqualToString:upperCaseString]){
+            upperCaseStringCount++;
+        }
+    } return upperCaseStringCount;
+}
+
+
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array{
+    [array removeAllObjects];
+}
 @end
