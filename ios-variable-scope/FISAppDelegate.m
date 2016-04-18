@@ -34,22 +34,16 @@
 -(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array {
   
     NSUInteger countOfUppercaseStrings = 0;
-    NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";", @"'", @" " ];
-    
+
     for (NSUInteger i = 0; i < [array count]; i++) {
         
-        NSString *withoutSpacesOrPunctuations = array[i];
+        NSString *string = array[i];
+        NSString *stringCapitalized = [string uppercaseString];
         
-        for (NSUInteger j = 0; j < [punctuations count]; j++) {
-            
-            withoutSpacesOrPunctuations = [withoutSpacesOrPunctuations stringByReplacingOccurrencesOfString:punctuations[i] withString:@""];
-        }
-        
-        NSString *withoutSOPCapitalized = [withoutSpacesOrPunctuations uppercaseString];
-        
-        if ([withoutSOPCapitalized isEqualToString:withoutSpacesOrPunctuations]) {
+        if ([stringCapitalized isEqualToString:string]) {
             countOfUppercaseStrings++;
         }
+        
     }
     
     return countOfUppercaseStrings;
