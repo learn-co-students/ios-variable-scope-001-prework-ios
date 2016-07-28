@@ -42,6 +42,8 @@
     return count;
 }
 
-
+- (void) removeAllObjectsFromArray: (NSMutableArray *)arr {
+    [arr removeAllObjects];
+}
 
 @end
