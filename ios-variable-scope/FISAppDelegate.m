@@ -26,8 +26,8 @@
  */
 
 
-- (NSMutableArray *)arrayByAddingString: (NSMutableArray *)arr withString: (NSString *)str {
-    NSMutableArray *retArr = [[NSMutableArray alloc] initWithArray:arr];
+- (NSMutableArray *)arrayByAddingString: (NSString *)str toArray:(NSMutableArray *)arr {
+    NSMutableArray *retArr = [[NSMutableArray alloc] initWithArray:arr copyItems:YES];
     [retArr addObject:str];
     return retArr;
 }
