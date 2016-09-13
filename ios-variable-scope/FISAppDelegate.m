@@ -39,10 +39,11 @@
 }
 
 -(void)removeAllObjectsFromArray:(NSMutableArray *)array {
-    NSUInteger arrayCount = [array count] - 1;
-    for (NSUInteger i = arrayCount; i >= 0; i--) {
-        [array removeObjectAtIndex:i];
-    }
+    [array removeAllObjects];
+//    NSUInteger arrayCount = [array count];
+//    for (NSUInteger i = 0; i < arrayCount; i++) {
+//        [array removeObjectAtIndex:i];
+//    }
 }
 
 @end
