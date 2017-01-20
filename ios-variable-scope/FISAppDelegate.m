@@ -25,4 +25,34 @@
  
  */
 
+-(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array {
+    NSMutableArray *finalArray = [array mutableCopy];
+    [finalArray addObject:string];
+    return finalArray;
+}
+
+-(NSUInteger) countOfUppercaseStringsInArray:(NSArray *)array{
+    
+    NSUInteger upperCaseAmount = 0;
+    
+    for (NSUInteger i = 0; i < [array count]; i++) {
+        NSString *upperCaseCompare = array[i];
+        upperCaseCompare = [upperCaseCompare uppercaseString];
+        
+        
+        
+        if ([upperCaseCompare isEqualToString:array[i]]){
+            upperCaseAmount++;
+            
+            
+        }
+    }
+    return upperCaseAmount;
+}
+
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array{
+    [array removeAllObjects];
+}
+
+
 @end
