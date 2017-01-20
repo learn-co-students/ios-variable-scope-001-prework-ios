@@ -12,7 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
--(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array;
+-(NSMutableArray *)arrayByAddingString:(NSString *)stringToBeAdded
+                               toArray:(NSMutableArray *)originalArray;
 
 -(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array;
 
